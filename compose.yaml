@@ -1,0 +1,8 @@
+services:
+
+  load-balancer:
+    image: mahmoudeng/white-load-balancer:v1
+    container_name: white-load-balancer
+    restart: unless-stopped
+    ports:
+      - "80:80"
